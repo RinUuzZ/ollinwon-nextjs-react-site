@@ -15,12 +15,7 @@ function NavBar() {
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <Image
-                src={Logo}
-                alt=""
-                width={200}
-                height={50}
-              />
+              <Image src={Logo} alt="" width={200} height={50} />
 
               <div className="md:hidden">
                 <div
@@ -43,23 +38,44 @@ function NavBar() {
               }`}
             >
               <ul className="h-screen md:h-auto list-none items-center justify-center md:flex">
-                <li className="pb-6 text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  ">
-                  <Link href="#" onClick={() => setNavbar(!navbar)} className="text-black" style={{textDecoration:'none' , fontSize:'1.4rem'}}>
+                <li className="pb-6 text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0">
+                  <Link
+                    href="#home"
+                    onClick={() => setNavbar(!navbar)}
+                    className="text-black hover:text-yellow-700"
+                    style={{ textDecoration: "none", fontSize: "1.4rem" }}
+                  >
                     Home
                   </Link>
                 </li>
+
                 <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0 ">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)} className="text-black" style={{textDecoration:'none' , fontSize:'1.4rem'}}>
+                  <Link
+                    href="#about"
+                    onClick={() => setNavbar(!navbar)}
+                    className="text-black hover:text-yellow-700"
+                    style={{ textDecoration: "none", fontSize: "1.4rem" }}
+                  >
                     About
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0 ">
-                  <Link href="#service" onClick={() => setNavbar(!navbar)}className="text-black" style={{textDecoration:'none' , fontSize:'1.4rem'}}>
+                  <Link
+                    href="#service"
+                    onClick={() => setNavbar(!navbar)}
+                    className="text-black hover:text-yellow-700"
+                    style={{ textDecoration: "none", fontSize: "1.4rem" }}
+                  >
                     Service
                   </Link>
                 </li>
                 <li className="pb-6 text-xl list-none text-black py-2 px-6 text-center  border-b-2 md:border-b-0 ">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)} className="text-black" style={{textDecoration:'none' , fontSize:'1.4rem',}}>
+                  <Link
+                    href="#contact"
+                    onClick={() => setNavbar(!navbar)}
+                    className="text-black hover:text-yellow-700"
+                    style={{ textDecoration: "none", fontSize: "1.4rem" }}
+                  >
                     Contact
                   </Link>
                 </li>

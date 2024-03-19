@@ -22,8 +22,7 @@ const Hero = () => {
               <Typewrittereffect />
             </div>
 
-            <p data-aos='fade-up' data-aos-delay='800' className="mt-[1.2rem] text-[20px] text-yellow-700">
-            Ollinwon excels in designing bespoke digital experiences, blending creative innovation with technical expertise to produce cutting-edge web solutions that not only meet but surpass business expectations and drive tangible results.
+            <p data-aos='fade-up' data-aos-delay='800' className="mt-[1.2rem] text-[20px] text-yellow-700">Ollinwon specializes in crafting custom digital experiences that exceed business goals through a fusion of creative ingenuity and technical mastery.
             </p>
 
             <div data-aos='fade-left' data-aos-delay='200' className="hidden md:block">
