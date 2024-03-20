@@ -8,8 +8,8 @@ const Skills = () => {
     <div className="col-span-3">
       <p className="text-sm lg:text-base leading-none text-white opacity-70">what We Do</p>
       <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-white">
-        Let's explore
-        <span className="text-yellow-600">What's popular</span>
+        Lets explore
+        <span className="text-yellow-600">Whats popular</span>
       </h1>
       <p className="text-sm lg:text-base mt-4 lg:mt-6 text-white opacity-70">
         At Ollinwon, we specialize in crafting exceptional digital experiences tailored to meet your unique business needs. Our dedicated team of experts merges creativity with technical prowess to deliver cutting-edge web solutions that drive results and exceed expectations.

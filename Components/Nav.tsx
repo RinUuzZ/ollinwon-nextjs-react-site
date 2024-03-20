@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
+import { RiMenu3Line } from "react-icons/ri";
 import CloseIcon from "@mui/icons-material/Close";
 import Logo from "../public/images/ollinwonlogo.png";
 
@@ -25,7 +25,7 @@ function NavBar() {
                   {navbar ? (
                     <CloseIcon className="w-6 h-6" />
                   ) : (
-                    <MenuIcon className="w-6 h-6" />
+                    <RiMenu3Line className="w-6 h-6" />
                   )}
                 </div>
               </div>
