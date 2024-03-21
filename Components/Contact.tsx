@@ -29,7 +29,7 @@ const Contact = () => {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -41,10 +41,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2
-              className="text-3xl font-bold text-yellow-600 mb-4"
-              data-aos="fade-left"
-            >
+            <h2 className="text-3xl font-bold text-yellow-600 mb-4" data-aos="fade-left">
               Get In Touch
             </h2>
             <p className="text-lg text-white mb-8" data-aos="fade-right">
@@ -64,8 +61,9 @@ const Contact = () => {
                 />
               </svg>
 
-              <span className="text-lg text-white"> +91 8590083588</span>
+              <span className="text-lg text-white" style={{cursor:'pointer'}}> +91 8590083588</span>
             </div>
+
           </div>
           <div>
             <form
@@ -82,11 +80,10 @@ const Contact = () => {
                   placeholder="Full Name"
                   className="py-3 px-4 rounded-md bg-gray-800 text-white outline-none"
                 />
-
                 <input
-                  type="text"
+                  type="email" 
                   name="email"
-                  required 
+                  required
                   onChange={handleChange}
                   placeholder="Email Address"
                   className="py-3 px-4 rounded-md bg-gray-800 text-white outline-none"
@@ -95,13 +92,13 @@ const Contact = () => {
               <input
                 type="text"
                 name="mobilenumber"
-                required 
-                onChange={handleChange} 
+                required
+                onChange={handleChange}
                 placeholder="Mobile Number"
                 className="py-3 px-4 rounded-md bg-gray-800 text-white outline-none mt-4"
               />
               <textarea
-                required 
+                required
                 onChange={handleChange}
                 name="message"
                 placeholder="Message"
@@ -109,13 +106,12 @@ const Contact = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-yellow-600 text-white py-3 px-6 mt-4 rounded-md hover:bg-yellow-700 transition duration-300"
+                className="bg-yellow-600 text-white py-3 px-6 mt-4 rounded-md hover:bg-yellow-700 transition duration-300" style={{cursor:'pointer'}}
               >
                 Submit
               </button>
             </form>
-
-            {serverResponse && <p>{serverResponse}</p>}
+            {serverResponse && <p>{JSON.stringify(serverResponse)}</p>}
           </div>
         </div>
       </div>
